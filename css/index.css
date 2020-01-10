@@ -259,6 +259,13 @@ header button:hover {
   margin: 0.5em;
   color: #1b2a49;
 }
+@media (max-width: 500px) {
+  .good-at h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+  }
+}
 .good-at ul {
   border: 3px solid #465881;
   border-radius: 5px;
