@@ -1,1 +1,345 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #c9d1d3;
+}
+p {
+  line-height: 1.6;
+}
+h1 {
+  font-size: 5vh;
+}
+h2 {
+  font-size: 3vh;
+}
+h3 {
+  font-size: 2vh;
+}
+.flex-mix {
+  display: flex;
+  justify-content: center;
+}
+.flex-dir {
+  flex-direction: column;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+nav .links {
+  margin: 1em;
+}
+nav .links a {
+  text-decoration: none;
+  color: #00909e;
+  margin: 2em 5em;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width: 500px) {
+  nav .links a {
+    margin: 0.5em;
+  }
+}
+nav .links a:hover {
+  color: #465881;
+}
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+header img {
+  max-height: 40%;
+  max-width: 40%;
+}
+header p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #1b2a49;
+}
+@media (max-width: 500px) {
+  header p {
+    margin: 1em;
+  }
+}
+header button {
+  width: 15%;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 30px;
+  background-color: #00909e;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  header button {
+    width: 50%;
+  }
+}
+header button:hover {
+  background-color: #c9d1d3;
+}
+.info {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .info {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .about-me {
+    width: 100%;
+  }
+}
+.about-me h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0.1em 0.5em;
+  color: #1b2a49;
+}
+.about-me p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0.5em 1em;
+  color: #1b2a49;
+}
+.good-at {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .good-at {
+    width: 100%;
+  }
+}
+.good-at h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0.5em;
+  color: #1b2a49;
+}
+@media (max-width: 500px) {
+  .good-at h2 {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+  }
+}
+.good-at ul {
+  border: 3px solid #465881;
+  border-radius: 5px;
+}
+.good-at ul li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  color: #1b2a49;
+  border-bottom: 3px solid #465881;
+  padding: 0.5em;
+  word-spacing: 15px;
+}
+.good-at ul li:last-child {
+  border-bottom: none;
+}
+@media (max-width: 500px) {
+  .work {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+}
+.work h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1.5em 0.5em;
+  color: #1b2a49;
+}
+@media (max-width: 500px) {
+  .work h2 {
+    display: flex;
+    justify-content: center;
+  }
+}
+.work ul {
+  border: 3px solid #465881;
+  border-radius: 5px;
+}
+.work ul li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5em;
+  color: #1b2a49;
+  border-bottom: 3px solid #465881;
+  padding: 0.5em;
+  word-spacing: 100px;
+}
+.work ul li:first-child {
+  word-spacing: 14.5em;
+}
+.work ul li:nth-child(2) {
+  word-spacing: 12.5em;
+}
+.work ul li:nth-child(3) {
+  word-spacing: 5em;
+}
+.work ul li:last-child {
+  border-bottom: none;
+  word-spacing: 6.7em;
+}
+.contact {
+  margin: 1em;
+}
+.contact h2,
+.contact p {
+  margin: 0.2em;
+}
+@media (max-width: 500px) {
+  .contact h2,
+  .contact p {
+    margin: 1px;
+    font-size: 10px;
+  }
+}
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
